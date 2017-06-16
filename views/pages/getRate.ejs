@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include ../partials/header.ejs %>
+    <title>Postage Price Calculations</title>
+</head>
+
+<body class="container">
+    <div class="row">
+        <h1 class="col-xs-12 center">How much will your postage cost?</h1>
+    </div>
+    <div class="row space-4">
+        <div class="col-xs-8 col-xs-offset-2">
+            <form id="calculateForm" action="results" method="get">
+                <div class="row">
+                    <div class="form-group col-xs-6">
+                        <label for="weight">Weight</label>
+                        <input type="number" class="form-control" name="weight" placeholder="0.0" step="any" required>
+                        <p class="help-block">Enter the weight of your mail in ounces.</p>
+                    </div>
+                    <div class="form-group col-xs-6">
+                        <label for="weight">Postage Type</label>
+                        <!-- <input type="text" class="form-control" id="" placeholder=""> -->
+                        <select class="form-control" name="mailType" required>
+                            <option value="" disabled selected>Select your option</option>
+                            <option name="mailType" value="stamped">Letters (Stamped)</option>
+                            <option name="mailType" value="metered">Letters (Metered)</option>
+                            <option name="mailType" value="flats">Large Envelopes (Flats)</option>
+                            <option name="mailType" value="parcels">Parcels</option>
+                        </select>
+                        <p class="help-block">What kind of mail are you sending?</p>
+                    </div>
+                </div>
+                <div class="row space-1">
+                    <div class="col-xs-4 col-xs-offset-4">
+                        <button class="btn btn-default col-xs-12" type="submit">Calculate Postage Cost</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
