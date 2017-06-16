@@ -1,13 +1,13 @@
 {
-  "name": "node-js-getting-started",
+  "name": "postage-calculator",
   "version": "0.2.6",
-  "description": "A sample Node.js app using Express 4",
+  "description": "How much will your postage cost?",
   "engines": {
     "node": "6.10.2"
   },
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "ejs": "2.5.6",
